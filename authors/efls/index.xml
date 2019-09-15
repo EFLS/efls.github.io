@@ -5,12 +5,20 @@
     <link>/authors/efls/</link>
       <atom:link href="/authors/efls/index.xml" rel="self" type="application/rss+xml" />
     <description>Elias Storms</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2019</copyright><lastBuildDate>Fri, 13 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2019</copyright><lastBuildDate>Sun, 15 Sep 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Elias Storms</title>
       <link>/authors/efls/</link>
     </image>
+    
+    <item>
+      <title>Schuld in meervoud. Een sociologische verkenning van schuldinvordering tussen economie, recht en sociaal werk</title>
+      <link>/publications/storms-2019b/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/publications/storms-2019b/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Time regimes in debt collection and mediation</title>
