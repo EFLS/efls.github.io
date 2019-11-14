@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Elias Storms</title>
-    <link>/publications/</link>
-      <atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
+    <title>0 | Elias Storms</title>
+    <link>/publication_types/0/</link>
+      <atom:link href="/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
+    <description>0</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2019</copyright><lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
-      <title>Publications</title>
-      <link>/publications/</link>
+      <title>0</title>
+      <link>/publication_types/0/</link>
     </image>
     
     <item>
@@ -30,30 +30,6 @@ It is very much a &lt;em&gt;working paper&lt;/em&gt;, and even though work on it
 
 &lt;p&gt;This short paper, a submission for the HCI workshop &amp;lsquo;Standing on the Shoulders of Giants&amp;rsquo;, looks at scholarly studies of the presence of algorithmic selection in everyday life and how existing research benefits from and is connected to Actor-Network Theory (ANT). The paper then suggests that the empirical and philosophical strengths of ANT could benefit not just algorithms, but the broader field of HCI. With this exercise, this submission touches upon multiple key topics of the workshop. Most prominently, the paper addresses topics 2 and 6 by suggesting how ANT could connect to existing debates on, for example, &amp;lsquo;post-userism&amp;rsquo;. Also topic 5 is relevant, since the rather obscure philosophical underpinnings of ANT need to be made more accessible if we hope to make its approach useful for HCI.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Time regimes in debt collection and mediation</title>
-      <link>/publications/storms-2019/</link>
-      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2019/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Schuldenoverlast in Vlaanderen. Dimensies van de schuldenproblematiek nader bekeken</title>
-      <link>/publications/storms-2014/</link>
-      <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2014/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Krediet, schulden en betalingsproblemen. Een verkenning van schuldenoverlast als sociaal probleem aan de hand van actueel onderzoek</title>
-      <link>/publications/storms-2014b/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2014b/</guid>
-      <description></description>
     </item>
     
   </channel>
