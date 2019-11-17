@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>/tags/ant/</loc>
-    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/</loc>
     <lastmod>2019-11-12T00:00:00+00:00</lastmod>
   </url>
@@ -48,12 +43,22 @@
   </url>
   
   <url>
+    <loc>/tags/social-theory/</loc>
+    <lastmod>2019-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <lastmod>2019-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/publication_types/2/</loc>
+    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/debt/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -70,6 +75,11 @@
   <url>
     <loc>/emacs/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publications/storms-2018/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>

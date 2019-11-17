@@ -13,18 +13,26 @@
     </image>
     
     <item>
-      <title>ANT</title>
-      <link>/tags/ant/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/ant/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>HCI</title>
       <link>/tags/hci/</link>
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/tags/hci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social Theory</title>
+      <link>/tags/social-theory/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/social-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debt</title>
+      <link>/tags/debt/</link>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/debt/</guid>
       <description></description>
     </item>
     

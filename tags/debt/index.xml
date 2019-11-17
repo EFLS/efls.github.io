@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debt | Elias Storms</title>
+    <link>/tags/debt/</link>
+      <atom:link href="/tags/debt/index.xml" rel="self" type="application/rss+xml" />
+    <description>Debt</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2019</copyright><lastBuildDate>Fri, 13 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Debt</title>
+      <link>/tags/debt/</link>
+    </image>
+    
+    <item>
+      <title>Time regimes in debt collection and mediation</title>
+      <link>/publications/storms-2019/</link>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/publications/storms-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spanningen en uitdagingen na 20 jaar Collectieve Schuldenregeling</title>
+      <link>/publications/storms-2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publications/storms-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Schuldenoverlast in Vlaanderen. Dimensies van de schuldenproblematiek nader bekeken</title>
+      <link>/publications/storms-2014/</link>
+      <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/storms-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Krediet, schulden en betalingsproblemen. Een verkenning van schuldenoverlast als sociaal probleem aan de hand van actueel onderzoek</title>
+      <link>/publications/storms-2014b/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publications/storms-2014b/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
