@@ -5,12 +5,20 @@
     <link>/tags/social-theory/</link>
       <atom:link href="/tags/social-theory/index.xml" rel="self" type="application/rss+xml" />
     <description>Social Theory</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2019</copyright><lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2020</copyright><lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Social Theory</title>
       <link>/tags/social-theory/</link>
     </image>
+    
+    <item>
+      <title>Schuld in meervoud. Een sociologische verkenning van schuldinvordering tussen economie, recht en sociaal werk</title>
+      <link>/publications/storms-2020/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publications/storms-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Exploring Actor-Network Theory in the Investigation of Algorithms</title>
