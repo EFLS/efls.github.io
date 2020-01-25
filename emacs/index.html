@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.4.0">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -30,10 +30,10 @@
   
   <meta name="description" content="Programming new editing commands was so convenient that even the secretaries in [the] office started learning how to use it. They used a manual someone had written which showed how to extend Emacs, but didn&rsquo;t say it was a programming. So the secretaries, who believed they couldn&rsquo;t do programming, weren&rsquo;t scared off.1
  A couple of years ago I fell into the emacs rabbit hole.
-I&rsquo;ve always enjoyed exploring text editors and I had been writing in markdown for quite some time until I stumbled upon Kieran Healy&rsquo;s excellent Plain Person&rsquo;s Guide to Plain Text Social Science.">
+I&rsquo;ve always enjoyed exploring text editors and I had been writing in markdown for quite some time until I stumbled upon Kieran Healy&rsquo;s excellent Plain Person&rsquo;s Guide to Plain Text Social Science .">
 
   
-  <link rel="alternate" hreflang="en-us" href="/emacs/">
+  <link rel="alternate" hreflang="en-us" href="https://www.eliasstorms.net/emacs/">
 
   
 
@@ -41,7 +41,10 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
   
   
   
-  <meta name="theme-color" content="#3f51b5">
+  <meta name="theme-color" content="#344D5B">
+  
+
+  
   
 
   
@@ -50,8 +53,8 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
     
@@ -62,8 +65,8 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
         
       
     
@@ -72,46 +75,185 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
 
     
 
-  
-
-  
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono&display=swap">
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="/css/academic.min.e27f66d20ef35cf3dd8cd8ca98b603db.css">
-
-  
-
-  
-  
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-148923730-1', 'auto');
+    
+    
       
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+      
+      
+
+      
     
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
     
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
   
   
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148923730-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-148923730-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
 
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu544d3ef94e46b4d75158d5f138bea642_12247_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu544d3ef94e46b4d75158d5f138bea642_12247_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/emacs/">
+  <link rel="canonical" href="https://www.eliasstorms.net/emacs/">
 
+  
   
   
   
@@ -122,16 +264,13 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
   
   <meta property="twitter:card" content="summary">
   
-  <meta property="twitter:site" content="@EFLS0">
-  <meta property="twitter:creator" content="@EFLS0">
-  
   <meta property="og:site_name" content="Elias Storms">
-  <meta property="og:url" content="/emacs/">
+  <meta property="og:url" content="https://www.eliasstorms.net/emacs/">
   <meta property="og:title" content="Notes on emacs | Elias Storms">
   <meta property="og:description" content="Programming new editing commands was so convenient that even the secretaries in [the] office started learning how to use it. They used a manual someone had written which showed how to extend Emacs, but didn&rsquo;t say it was a programming. So the secretaries, who believed they couldn&rsquo;t do programming, weren&rsquo;t scared off.1
  A couple of years ago I fell into the emacs rabbit hole.
-I&rsquo;ve always enjoyed exploring text editors and I had been writing in markdown for quite some time until I stumbled upon Kieran Healy&rsquo;s excellent Plain Person&rsquo;s Guide to Plain Text Social Science."><meta property="og:image" content="/img/icon-192.png">
-  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+I&rsquo;ve always enjoyed exploring text editors and I had been writing in markdown for quite some time until I stumbled upon Kieran Healy&rsquo;s excellent Plain Person&rsquo;s Guide to Plain Text Social Science ."><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-08-01T00:00:00&#43;00:00">
@@ -140,6 +279,7 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
   
 
   
+
 
 
   
@@ -193,24 +333,41 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
+    <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/">Elias Storms</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
+    </div>
+    
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Elias Storms</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
       
-      
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
@@ -294,29 +451,24 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
         
 
       
+
+        
       </ul>
-      <ul class="navbar-nav ml-auto">
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
       
 
-        
+      
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
+      
 
-        
+    </ul>
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
-    </div>
   </div>
 </nav>
 
@@ -350,28 +502,30 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
     
 
 
-
 <div class="article-metadata">
 
   
   
 
   
-
-  
-
-  
-
-  
-  
-  
-
-  
-  
-
-  
+  <span class="article-date">
     
+    
+      
+    
+    1 Aug 2019
+  </span>
+  
 
+  
+
+  
+
+  
+  
+  
+
+  
   
 
 </div>
@@ -400,42 +554,50 @@ I&rsquo;ve always enjoyed exploring text editors and I had been writing in markd
 
     <div class="article-style">
       <blockquote>
-<p>Programming new editing commands was so convenient that even the secretaries in [the] office started learning how to use it. They used a manual someone had written which showed how to extend Emacs, but didn&rsquo;t say it was a programming. So the secretaries, who believed they couldn&rsquo;t do programming, weren&rsquo;t scared off.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+<p>Programming new editing commands was so convenient that even the secretaries in [the] office started learning how to use it. They used a manual someone had written which showed how to extend Emacs, but didn&rsquo;t say it was a programming. So the secretaries, who believed they couldn&rsquo;t do programming, weren&rsquo;t scared off.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
-
 <p>A couple of years ago I fell into the <code>emacs</code> rabbit hole.</p>
-
-<p>I&rsquo;ve always enjoyed exploring text editors and I had been writing in <code>markdown</code> for quite some time until I stumbled upon Kieran Healy&rsquo;s excellent <a href="http://plain-text.co/" target="_blank">Plain Person&rsquo;s Guide to Plain Text Social Science</a>.
+<p>I&rsquo;ve always enjoyed exploring text editors and I had been writing in <code>markdown</code> for quite some time until I stumbled upon Kieran Healy&rsquo;s excellent 
+<a href="http://plain-text.co/" target="_blank" rel="noopener">Plain Person&rsquo;s Guide to Plain Text Social Science</a>
+.
 He has plenty of advice of how social scientists can benefit from plain text for both writing and making statistical analysis reproducable.
 He only mentions <code>emacs</code> briefly, but exploring this editor first lead me to <code>spacemacs</code>.</p>
-
 <p>After a year of messing around with the very accessible <code>spacemacs</code> (and simultaneously learning <code>vi</code> keybindings &ndash; a challenging combination), I moved on to vanilla <code>emacs</code> and started building my own configuration.</p>
-
 <p>And that, in brief, is how a non-programmer such as myself fell in love with the user-empowering philosophy of free software.</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1">Richard Stallman, <em>My Lisp Experiences and the Development of GNU Emacs</em>, <a href="https://www.gnu.org/gnu/rms-lisp.html" target="_blank">https://www.gnu.org/gnu/rms-lisp.html</a>.
- <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>Richard Stallman, <em>My Lisp Experiences and the Development of GNU Emacs</em>, <a href="https://www.gnu.org/gnu/rms-lisp.html">https://www.gnu.org/gnu/rms-lisp.html</a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 
     </div>
 
     
 
 
-    
 
 
 
-    
 
-    
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
 
 
   </div>
@@ -445,27 +607,22 @@ He only mentions <code>emacs</code> briefly, but exploring this editor first lea
 
     
     
-
-    
-    
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
         
       
 
-      
-      
     
 
     
@@ -473,18 +630,18 @@ He only mentions <code>emacs</code> briefly, but exploring this editor first lea
 
     
     
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>const code_highlighting = true;</script>
     
 
+    
+    
+    
+    
     
     
     <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
-      };
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
       const content_type = {
         'post': "Posts",
         'project': "Projects",
@@ -538,7 +695,7 @@ He only mentions <code>emacs</code> briefly, but exploring this editor first lea
     
     
     
-    <script src="/js/academic.min.16bbb3750feb7244c9bc409a5a4fe678.js"></script>
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
 
     
 
@@ -548,12 +705,13 @@ He only mentions <code>emacs</code> briefly, but exploring this editor first lea
 
 
   
+  
   <div class="container">
     <footer class="site-footer">
   
 
   <p class="powered-by">
-    &copy; Elias Storms 2020 &middot; 
+    © Elias Storms 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -561,7 +719,7 @@ He only mentions <code>emacs</code> briefly, but exploring this editor first lea
 
     
     <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
+      <a href="#" class="back-to-top">
         <span class="button_icon">
           <i class="fas fa-chevron-up fa-2x"></i>
         </span>

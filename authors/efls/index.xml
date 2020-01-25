@@ -2,73 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elias Storms</title>
-    <link>/authors/efls/</link>
-      <atom:link href="/authors/efls/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.eliasstorms.net/authors/efls/</link>
+      <atom:link href="https://www.eliasstorms.net/authors/efls/index.xml" rel="self" type="application/rss+xml" />
     <description>Elias Storms</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2020</copyright><lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>/img/icon-192.png</url>
-      <title>Elias Storms</title>
-      <link>/authors/efls/</link>
-    </image>
-    
     <item>
       <title>Schuld in meervoud. Een sociologische verkenning van schuldinvordering tussen economie, recht en sociaal werk</title>
-      <link>/publications/storms-2020/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2020/</link>
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2020/</guid>
-      <description></description>
+      <guid>https://www.eliasstorms.net/publications/storms-2020/</guid>
+      <description>&lt;p&gt;Meer informatie en het volledige manuscript zijn 
+&lt;a href=&#34;https://www.eliasstorms.net/schuld-in-meervoud&#34;&gt;hier beschikbaar&lt;/a&gt;
+.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Exploring Actor-Network Theory in the Investigation of Algorithms</title>
-      <link>/publications/storms-2019b/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2019b/</link>
       <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2019b/</guid>
-      <description>
+      <guid>https://www.eliasstorms.net/publications/storms-2019b/</guid>
+      <description>&lt;p&gt;Paper accepted for the workshop
 
-&lt;p&gt;Paper accepted for the workshop
-&lt;a href=&#34;https://authentic.sice.indiana.edu/philosophy-hci-workshop/&#34; target=&#34;_blank&#34;&gt;&amp;lsquo;Standing on the Shoulders of Giants: Exploring the Intersection of Philosophy and HCI&amp;rsquo;&lt;/a&gt;
+&lt;a href=&#34;https://authentic.sice.indiana.edu/philosophy-hci-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;lsquo;Standing on the Shoulders of Giants: Exploring the Intersection of Philosophy and HCI&amp;rsquo;&lt;/a&gt;
+
 at the CHI 2019 conference in Glasgow.&lt;/p&gt;
-
 &lt;p&gt;This draft connects &lt;em&gt;Actor-Network Theory&lt;/em&gt; and Human-Computer Interaction, reflecting on ongoing research on algorithmic ranking and selection.
 It is very much a &lt;em&gt;working paper&lt;/em&gt;, and even though work on it has stalled, I am still interested in turning it into a full article at some point in the future.&lt;/p&gt;
-
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
-
 &lt;p&gt;This short paper, a submission for the HCI workshop &amp;lsquo;Standing on the Shoulders of Giants&amp;rsquo;, looks at scholarly studies of the presence of algorithmic selection in everyday life and how existing research benefits from and is connected to Actor-Network Theory (ANT). The paper then suggests that the empirical and philosophical strengths of ANT could benefit not just algorithms, but the broader field of HCI. With this exercise, this submission touches upon multiple key topics of the workshop. Most prominently, the paper addresses topics 2 and 6 by suggesting how ANT could connect to existing debates on, for example, &amp;lsquo;post-userism&amp;rsquo;. Also topic 5 is relevant, since the rather obscure philosophical underpinnings of ANT need to be made more accessible if we hope to make its approach useful for HCI.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Time regimes in debt collection and mediation</title>
-      <link>/publications/storms-2019/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2019/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2019/</guid>
+      <guid>https://www.eliasstorms.net/publications/storms-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spanningen en uitdagingen na 20 jaar Collectieve Schuldenregeling</title>
-      <link>/publications/storms-2018/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2018/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2018/</guid>
+      <guid>https://www.eliasstorms.net/publications/storms-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Schuldenoverlast in Vlaanderen. Dimensies van de schuldenproblematiek nader bekeken</title>
-      <link>/publications/storms-2014/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2014/</link>
       <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2014/</guid>
+      <guid>https://www.eliasstorms.net/publications/storms-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Krediet, schulden en betalingsproblemen. Een verkenning van schuldenoverlast als sociaal probleem aan de hand van actueel onderzoek</title>
-      <link>/publications/storms-2014b/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2014b/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2014b/</guid>
+      <guid>https://www.eliasstorms.net/publications/storms-2014b/</guid>
       <description></description>
     </item>
     

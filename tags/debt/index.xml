@@ -2,53 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Debt | Elias Storms</title>
-    <link>/tags/debt/</link>
-      <atom:link href="/tags/debt/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.eliasstorms.net/tags/debt/</link>
+      <atom:link href="https://www.eliasstorms.net/tags/debt/index.xml" rel="self" type="application/rss+xml" />
     <description>Debt</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2020</copyright><lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Debt</title>
-      <link>/tags/debt/</link>
+      <link>https://www.eliasstorms.net/tags/debt/</link>
     </image>
     
     <item>
       <title>Schuld in meervoud. Een sociologische verkenning van schuldinvordering tussen economie, recht en sociaal werk</title>
-      <link>/publications/storms-2020/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2020/</link>
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2020/</guid>
-      <description></description>
+      <guid>https://www.eliasstorms.net/publications/storms-2020/</guid>
+      <description>&lt;p&gt;Meer informatie en het volledige manuscript zijn 
+&lt;a href=&#34;https://www.eliasstorms.net/schuld-in-meervoud&#34;&gt;hier beschikbaar&lt;/a&gt;
+.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Time regimes in debt collection and mediation</title>
-      <link>/publications/storms-2019/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2019/</link>
       <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2019/</guid>
+      <guid>https://www.eliasstorms.net/publications/storms-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spanningen en uitdagingen na 20 jaar Collectieve Schuldenregeling</title>
-      <link>/publications/storms-2018/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2018/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2018/</guid>
+      <guid>https://www.eliasstorms.net/publications/storms-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Schuldenoverlast in Vlaanderen. Dimensies van de schuldenproblematiek nader bekeken</title>
-      <link>/publications/storms-2014/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2014/</link>
       <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2014/</guid>
+      <guid>https://www.eliasstorms.net/publications/storms-2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Krediet, schulden en betalingsproblemen. Een verkenning van schuldenoverlast als sociaal probleem aan de hand van actueel onderzoek</title>
-      <link>/publications/storms-2014b/</link>
+      <link>https://www.eliasstorms.net/publications/storms-2014b/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publications/storms-2014b/</guid>
+      <guid>https://www.eliasstorms.net/publications/storms-2014b/</guid>
       <description></description>
     </item>
     
