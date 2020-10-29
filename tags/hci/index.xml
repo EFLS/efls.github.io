@@ -5,12 +5,30 @@
     <link>https://www.eliasstorms.net/tags/hci/</link>
       <atom:link href="https://www.eliasstorms.net/tags/hci/index.xml" rel="self" type="application/rss+xml" />
     <description>HCI</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2020</copyright><lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Elias Storms 2020</copyright><lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>HCI</title>
       <link>https://www.eliasstorms.net/tags/hci/</link>
     </image>
+    
+    <item>
+      <title>Foregrounding Algorithms: Preparing Users for Co-design with Sensitizing Activities</title>
+      <link>https://www.eliasstorms.net/publications/alvarado-2020/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.eliasstorms.net/publications/alvarado-2020/</guid>
+      <description>&lt;p&gt;Paper presented at the NordiCHI 2020 conference.&lt;/p&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Algorithms are present in many of our everyday activities.
+However, there is generally low awareness of their presence among users, and there are various conceptualizations to define them.
+Additionally, algorithms are often both complex and opaque.
+These characteristics raise challenges when applying co-design activities to the interaction design of algorithms.
+We argue that researchers can overcome these challenges by developing sensitizing activities: activities that foreground the presence of algorithms, thus raising algorithmic awareness and a shared understanding, without influencing their initial experiences and expectations.
+We share how we applied sensitizing activities in two case studies: sensitizing interviews, and diary studies together with two-phase workshops.
+We share our experiences applying these techniques to overcome the challenges of low algorithmic awareness and multiple algorithmic understandings of participants.
+Finally, we offer recommendations for researchers and practitioners when applying sensitizing activities in this design context and invite further methodological discussion on this challenging topic.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Exploring Actor-Network Theory in the Investigation of Algorithms</title>
