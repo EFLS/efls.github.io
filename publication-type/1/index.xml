@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | Elias Storms</title>
+    <link>https://www.eliasstorms.net/publication-type/1/</link>
+      <atom:link href="https://www.eliasstorms.net/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Elias Storms</copyright><lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.eliasstorms.net/media/icon_hu30740375d135df8f89c11012417564b7_13611_512x512_fill_lanczos_center_2.png</url>
+      <title>1</title>
+      <link>https://www.eliasstorms.net/publication-type/1/</link>
+    </image>
+    
+    <item>
+      <title>Foregrounding Algorithms: Preparing Users for Co-design with Sensitizing Activities</title>
+      <link>https://www.eliasstorms.net/publication/alvarado-2020/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.eliasstorms.net/publication/alvarado-2020/</guid>
+      <description>&lt;p&gt;Paper presented at the NordiCHI 2020 conference.&lt;/p&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Algorithms are present in many of our everyday activities.
+However, there is generally low awareness of their presence among users, and there are various conceptualizations to define them.
+Additionally, algorithms are often both complex and opaque.
+These characteristics raise challenges when applying co-design activities to the interaction design of algorithms.
+We argue that researchers can overcome these challenges by developing sensitizing activities: activities that foreground the presence of algorithms, thus raising algorithmic awareness and a shared understanding, without influencing their initial experiences and expectations.
+We share how we applied sensitizing activities in two case studies: sensitizing interviews, and diary studies together with two-phase workshops.
+We share our experiences applying these techniques to overcome the challenges of low algorithmic awareness and multiple algorithmic understandings of participants.
+Finally, we offer recommendations for researchers and practitioners when applying sensitizing activities in this design context and invite further methodological discussion on this challenging topic.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

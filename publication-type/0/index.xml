@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0 | Elias Storms</title>
+    <link>https://www.eliasstorms.net/publication-type/0/</link>
+      <atom:link href="https://www.eliasstorms.net/publication-type/0/index.xml" rel="self" type="application/rss+xml" />
+    <description>0</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Elias Storms</copyright><lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.eliasstorms.net/media/icon_hu30740375d135df8f89c11012417564b7_13611_512x512_fill_lanczos_center_2.png</url>
+      <title>0</title>
+      <link>https://www.eliasstorms.net/publication-type/0/</link>
+    </image>
+    
+    <item>
+      <title>Exploring Actor-Network Theory in the Investigation of Algorithms</title>
+      <link>https://www.eliasstorms.net/publication/storms-2019b/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.eliasstorms.net/publication/storms-2019b/</guid>
+      <description>&lt;p&gt;Paper accepted for the workshop
+&lt;a href=&#34;https://authentic.sice.indiana.edu/philosophy-hci-workshop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;lsquo;Standing on the Shoulders of Giants: Exploring the Intersection of Philosophy and HCI&amp;rsquo;&lt;/a&gt;
+at the CHI 2019 conference in Glasgow.&lt;/p&gt;
+&lt;p&gt;This draft connects &lt;em&gt;Actor-Network Theory&lt;/em&gt; and Human-Computer Interaction, reflecting on ongoing research on algorithmic ranking and selection.
+It is very much a &lt;em&gt;working paper&lt;/em&gt;, and even though work on it has stalled, I am still interested in turning it into a full article at some point in the future.&lt;/p&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;This short paper, a submission for the HCI workshop &amp;lsquo;Standing on the Shoulders of Giants&amp;rsquo;, looks at scholarly studies of the presence of algorithmic selection in everyday life and how existing research benefits from and is connected to Actor-Network Theory (ANT). The paper then suggests that the empirical and philosophical strengths of ANT could benefit not just algorithms, but the broader field of HCI. With this exercise, this submission touches upon multiple key topics of the workshop. Most prominently, the paper addresses topics 2 and 6 by suggesting how ANT could connect to existing debates on, for example, &amp;lsquo;post-userism&amp;rsquo;. Also topic 5 is relevant, since the rather obscure philosophical underpinnings of ANT need to be made more accessible if we hope to make its approach useful for HCI.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spanningen en uitdagingen na 20 jaar Collectieve Schuldenregeling</title>
+      <link>https://www.eliasstorms.net/publication/storms-2018/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.eliasstorms.net/publication/storms-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

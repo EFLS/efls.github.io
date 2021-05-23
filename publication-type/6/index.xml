@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6 | Elias Storms</title>
+    <link>https://www.eliasstorms.net/publication-type/6/</link>
+      <atom:link href="https://www.eliasstorms.net/publication-type/6/index.xml" rel="self" type="application/rss+xml" />
+    <description>6</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Elias Storms</copyright><lastBuildDate>Sat, 01 Feb 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.eliasstorms.net/media/icon_hu30740375d135df8f89c11012417564b7_13611_512x512_fill_lanczos_center_2.png</url>
+      <title>6</title>
+      <link>https://www.eliasstorms.net/publication-type/6/</link>
+    </image>
+    
+    <item>
+      <title>Schuldenoverlast in Vlaanderen. Dimensies van de schuldenproblematiek nader bekeken</title>
+      <link>https://www.eliasstorms.net/publication/storms-2014/</link>
+      <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.eliasstorms.net/publication/storms-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Krediet, schulden en betalingsproblemen. Een verkenning van schuldenoverlast als sociaal probleem aan de hand van actueel onderzoek</title>
+      <link>https://www.eliasstorms.net/publication/storms-2014b/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://www.eliasstorms.net/publication/storms-2014b/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

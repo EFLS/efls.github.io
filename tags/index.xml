@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags | Elias Storms</title>
+    <link>https://www.eliasstorms.net/tags/</link>
+      <atom:link href="https://www.eliasstorms.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Elias Storms</copyright><lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.eliasstorms.net/media/icon_hu30740375d135df8f89c11012417564b7_13611_512x512_fill_lanczos_center_2.png</url>
+      <title>Tags</title>
+      <link>https://www.eliasstorms.net/tags/</link>
+    </image>
+    
+  </channel>
+</rss>
