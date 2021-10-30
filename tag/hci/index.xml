@@ -5,12 +5,23 @@
     <link>https://www.eliasstorms.net/tag/hci/</link>
       <atom:link href="https://www.eliasstorms.net/tag/hci/index.xml" rel="self" type="application/rss+xml" />
     <description>HCI</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Elias Storms</copyright><lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Elias Storms</copyright><lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.eliasstorms.net/media/icon_hu30740375d135df8f89c11012417564b7_13611_512x512_fill_lanczos_center_2.png</url>
       <title>HCI</title>
       <link>https://www.eliasstorms.net/tag/hci/</link>
     </image>
+    
+    <item>
+      <title>Improving the Debate: Interface Elements that Enhance Civility and Relevance in Online News Comments</title>
+      <link>https://www.eliasstorms.net/publication/bossens-2021/</link>
+      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.eliasstorms.net/publication/bossens-2021/</guid>
+      <description>&lt;p&gt;Paper presented at the INTERACT 2021 conference.&lt;/p&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Online news websites face an increasing amount of hateful reactions of readers, and reactive attempts at enabling more civil discourse, such as moderation, do not prove sufficient. In this study, we propose a proactive approach to counter anti-social behavior by redesigning the comment section’s interface. We conducted an exploratory online experiment with 255 participants to determine the impact of including a discussion statement related to the news article’s topic in combination with two types of opinion elements. Results reveal a significant positive effect of the novel interfaces on civility and relevance, compared to a traditional comment section (control group). Users evaluated the pragmatic qualities of the traditional comment section significantly more positive compared to the interface with a discussion statement and the continuous opinion element.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Foregrounding Algorithms: Preparing Users for Co-design with Sensitizing Activities</title>
