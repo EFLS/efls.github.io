@@ -5,22 +5,27 @@
     <link>https://www.eliasstorms.net/publication/</link>
       <atom:link href="https://www.eliasstorms.net/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Elias Storms</copyright><lastBuildDate>Thu, 26 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Elias Storms</copyright><lastBuildDate>Wed, 16 Mar 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.eliasstorms.net/media/icon_hu30740375d135df8f89c11012417564b7_13611_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.eliasstorms.net/media/icon_hu30740375d135df8f89c11012417564b7_13611_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://www.eliasstorms.net/publication/</link>
     </image>
     
     <item>
-      <title>Improving the Debate: Interface Elements that Enhance Civility and Relevance in Online News Comments</title>
+      <title>Schuldinvordering en de schuldenspiraal. Hoe het &#39;doen betalen&#39; van achterstallen schuldproblemen verergert</title>
+      <link>https://www.eliasstorms.net/publication/storms-2022/</link>
+      <pubDate>Wed, 16 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.eliasstorms.net/publication/storms-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving the Debate: Interface elements that enhance civility and relevance in online news comments</title>
       <link>https://www.eliasstorms.net/publication/bossens-2021/</link>
-      <pubDate>Thu, 26 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
       <guid>https://www.eliasstorms.net/publication/bossens-2021/</guid>
-      <description>&lt;p&gt;Paper presented at the INTERACT 2021 conference.&lt;/p&gt;
-&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
-&lt;p&gt;Online news websites face an increasing amount of hateful reactions of readers, and reactive attempts at enabling more civil discourse, such as moderation, do not prove sufficient. In this study, we propose a proactive approach to counter anti-social behavior by redesigning the comment section’s interface. We conducted an exploratory online experiment with 255 participants to determine the impact of including a discussion statement related to the news article’s topic in combination with two types of opinion elements. Results reveal a significant positive effect of the novel interfaces on civility and relevance, compared to a traditional comment section (control group). Users evaluated the pragmatic qualities of the traditional comment section significantly more positive compared to the interface with a discussion statement and the continuous opinion element.&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -75,7 +80,7 @@ It is very much a &lt;em&gt;working paper&lt;/em&gt;, and even though work on it
 While the other parts are in Dutch, you can read the original article in chapter 11 in &lt;a href=&#34;https://www.eliasstorms.net/schuld-in-meervoud/storms-2020-schuld-in-meervoud.pdf&#34;&gt;the PDF version.&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
 &lt;p&gt;Debt and time are inherently linked. In its essence, a debt is a quantified promise to pay at some point in the future. This article explores the temporal dimension of debt that manifests itself during the process of debt collection, the phase at which indebtedness becomes most tangible.&lt;/p&gt;
-&lt;p&gt;Based on in-depth interviews and ethnographic fieldwork in the world of debt collection in Flanders, Belgium, we analyse how different temporal techniques used by &amp;lsquo;street-level&amp;rsquo; debt collectors incite debtors to pay. Both in collection out of court by collection agencies as well as in judicial enforcement of the obligation to pay, debt collection imposes a strict schedule of repayment on the defaulting debtor. In this &amp;lsquo;time regime&amp;rsquo; imposed upon debtors, payments are closely tracked, so that any deviation can be met by swift reminders and pecuniary punishment.&lt;/p&gt;
+&lt;p&gt;Based on in-depth interviews and ethnographic fieldwork in the world of debt collection in Flanders, Belgium, we analyse how different temporal techniques used by &amp;lsquo;street-level&amp;rsquo; debt collectors incite debtors to pay. Both in collection out of court by collection agencies as well as in judicial enforcement of the obligation to pay, debt collection imposes a strict schedule of repayment on the defaulting debtor. In this &amp;rsquo;time regime&amp;rsquo; imposed upon debtors, payments are closely tracked, so that any deviation can be met by swift reminders and pecuniary punishment.&lt;/p&gt;
 &lt;p&gt;The time regimes of debt collection can conflict with the temporal structures present in the everyday economic lives of the debtors. Incongruences appear due to frictions between the rhythm of repayment on the one hand, and temporal irregularities of the economic lives of debtors on the other. To further explore this time dimension, we also look at how debtors respond and adapt to the new temporal impositions, and how debt mediators deploy temporal strategies when assisting the over-indebted. By negotiating payment plans with creditors, debt mediators mitigate the harsher aspects of the time regime enacted through collection agencies and judicial officers.&lt;/p&gt;
 </description>
     </item>
