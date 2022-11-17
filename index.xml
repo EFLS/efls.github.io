@@ -5,12 +5,48 @@
     <link>https://www.eliasstorms.net/</link>
       <atom:link href="https://www.eliasstorms.net/index.xml" rel="self" type="application/rss+xml" />
     <description>Elias Storms</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Elias Storms</copyright><lastBuildDate>Wed, 16 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Elias Storms</copyright><lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.eliasstorms.net/media/icon_hu30740375d135df8f89c11012417564b7_13611_512x512_fill_lanczos_center_3.png</url>
       <title>Elias Storms</title>
       <link>https://www.eliasstorms.net/</link>
     </image>
+    
+    <item>
+      <title>&#39;Transparency is Meant for Control&#39; and Vice Versa: Learning from Co-designing and Evaluating Algorithmic News Recommenders</title>
+      <link>https://www.eliasstorms.net/publication/storms-2022b/</link>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.eliasstorms.net/publication/storms-2022b/</guid>
+      <description>&lt;p&gt;Publication for CSCW 2022&lt;/p&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Algorithmic systems that recommend content often lack transparency
+about how they come to their suggestions. One area in which
+recommender systems are increasingly prevalent is online news
+distribution. In this paper, we explore how a lack of transparency of
+(news) recommenders can be tackled by involving users in the design of
+interface elements. In the context of automated decision-making,
+legislative frameworks such as the GDPR in Europe introduce a specific
+conception of transparency, granting &amp;lsquo;data subjects&amp;rsquo; specific rights
+and imposing obligations on service providers. An important related
+question is how people using personalized recommender systems relate
+to the issue of transparency, not as legal data subjects but as users.
+This paper builds upon a two-phase study on how users conceive of
+transparency and related issues in the context of algorithmic news
+recommenders. We organized co-design workshops to elicit participants&amp;rsquo;
+&amp;lsquo;algorithmic imaginaries&amp;rsquo; and invited them to ideate interface
+elements for increased transparency. This revealed the importance of
+combining legible transparency features with features that increase
+user control. We then conducted a qualitative evaluation of mock-up
+prototypes to investigate users&amp;rsquo; preferences and concerns when dealing
+with design features to increase transparency and control. Our
+investigation illustrates how users&amp;rsquo; expectations and impressions of
+news recommenders are closely related to their news reading practices.
+On a broader level, we show how transparency and control are
+conceptually intertwined. Transparency without control leaves users
+frustrated. Conversely, without a basic level of transparency into how
+a system works, users remain unsure of the impact of controls.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Schuldinvordering en de schuldenspiraal. Hoe het &#39;doen betalen&#39; van achterstallen schuldproblemen verergert</title>
