@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-06-24 Wed 14:04 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Publications</title>
+<meta name="author" content="Elias Storms" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="./css/style.css" type="text/css"/>
+<link rel="icon" href="static/favicon.png" type="image/x-icon">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id='head'>
+    <h1><a href='./index.html'>
+        Home 
+    </a></h1>
+    <ul>
+      <li><a href='./publications-index.html'>Publications</a></li>
+      <li><a href='./notes-index.html'>Notes (EN)</a></li>
+      <li><a href='./notities-index.html'>Notities (NL)</a></li>
+      <li><a href='./about.html' style='float: right'>About</a></li>
+      <li><a href='./theindex.html' style='float: right'>Index</a></li>
+    </ul>
+</div>
+</div>
+<div id="content" class="content">
+<header>
+<h1 class="title">Publications</h1>
+</header><p>
+My list of academic publications is short, and this selection of them
+even shorter.
+</p>
+
+<div class="callout" id="org707c7d0">
+<p>
+Op zoek naar 
+<a href="./schuld-in-meervoud/"> <img class="intext-icon" src="./static/favicon.png">Schuld in Meervoud?</a>
+</p>
+
+</div>
+
+<p>
+See also my <a href="https://orcid.org/0000-0002-7613-481X">ORCID profile</a>, which features a more complete list.
+</p>
+<div id="outline-container-org9b7db3c" class="outline-2">
+<h2 id="org9b7db3c">On debt and debt collection</h2>
+<div class="outline-text-2" id="text-org9b7db3c">
+<p>
+The topic of my PhD and a continuing research interest: indebtedness
+and debt collection practices.
+</p>
+
+<div class="bibref" id="orgad0bdc9">
+<p>
+Storms, E., &amp; Verschraegen, G. (2019). <b>Time regimes in debt collection and mediation.</b> <i>Time &amp; Society</i>, 28(4), 1382–1408. <a href="https://doi.org/10.1177/0961463X18767597">https://doi.org/10.1177/0961463X18767597</a>
+</p>
+
+</div>
+<div class="bibnote" id="org9074dca">
+<p>
+I enjoyed thinking and writing about this combination of topics, even
+though it is about a harsh social problem.
+The article presents a combination of theoretical sociology (to think
+about debt as both precisely calculable and future oriented), and
+fieldwork on debt collection and debt counseling.
+<br>
+Files: <a class="pdflink" href="./publications/storms-2019.pdf">PDF</a>,
+<a class="biblink" href="./publications/storms-2019.bib">.bib</a>
+</p>
+
+</div>
+
+<div class="bibref" id="org89f05f5">
+<p>
+Storms, E. (2022). <b>Schuldinvordering en de schuldenspiraal. Hoe het
+&ldquo;doen betalen&rdquo; van achterstallen schuldproblemen verergert.</b> In B.
+Cantillon &amp; S. Latré (eds.), <i>U-Turn 2021. Wegwijzers naar een nieuw
+sociaal contract</i> (pp. 151–161). UPA.
+<a href="https://doi.org/10.46944/9789461173287.14">https://doi.org/10.46944/9789461173287.14</a>
+</p>
+
+</div>
+<div class="bibnote" id="org2af0061">
+<p>
+Beknopte introductie tot hoe schuldinvordering kan bijdragen tot
+een schuldenspiraal en vergroting van de schuldenproblematiek.<br>
+Files: 
+<a class="pdflink" href="./publications/storms-2022.pdf">PDF</a>,
+<a class="biblink" href="./publications/storms-2022.bib">.bib</a>
+</p>
+
+</div>
+
+<div class="bibref" id="org1b9cdae">
+<p>
+Storms, E. (2020). <b>Schuld in meervoud. Een sociologische verkenning
+van schuldinvordering tussen economie, recht en sociaal werk.</b>
+Doctoraal proefschrift. Universiteit Antwerpen.
+<a href="https://www.eliasstorms.net/schuld-in-meervoud/">www.eliasstorms.net/schuld-in-meervoud/</a>
+</p>
+
+</div>
+<div class="bibnote" id="org242b06f">
+<p>
+Zie <a href="schuld-in-meervoud/index.html">afzonderlijke pagina</a>.
+</p>
+
+</div>
+
+<p>
+Other publications on debt and indebtedness in Belgium:
+</p>
+<ul class="org-ul">
+<li><div class="bibref" id="orgc1e150b">
+<p>
+Storms, E. (2018), Spanningen en uitdagingen na 20 jaar Collectieve
+Schuldenregeling, <i>Tijdschrift voor Insolventie- en Beslagrecht</i>, 0: pp.
+59-60
+</p>
+
+</div></li>
+<li><div class="bibref" id="orgd60781d">
+<p>
+Storms, E. (2015), Verward in Schuld, <i>De Gids op Maatschappelijk Gebied</i>,
+106 (1): pp. 11-17
+</p>
+
+</div></li>
+<li><div class="bibref" id="org503be8a">
+<p>
+Storms, E. (2014), Schuldenoverlast in Vlaanderen. Dimensies van de
+schuldenproblematiek nader bekeken. In Dierckx, D., Coene, J. en
+Raeymaeckers, P. (eds.), <i>Armoede en Sociale Uitsluiting. Jaarboek 2014</i>
+(pp. 144-64), Acco: Leuven
+</p>
+
+</div></li>
+<li><div class="bibref" id="org419a653">
+<p>
+Storms, E. (2014), Krediet, schuld en betalingsproblemen. In
+Verschraegen, G., de Olde, C., Oosterlynck, S., Vandermoere, F. en
+Dierckx, D. (eds.), <i>Over gevestigden en buitenstaanders. Armoede,
+diversiteit en stedelijkheid</i> (pp. 295-316), Acco: Leuven
+</p>
+
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2f72588" class="outline-2">
+<h2 id="org2f72588">Human-Computer Interaction</h2>
+<div class="outline-text-2" id="text-org2f72588">
+<p>
+From 2019 until 2021 I worked in the domain of HCI at KU Leuven. These
+are some publications stemming from this period, both methodological
+reflections and research findings.
+</p>
+
+<div class="bibref" id="orgc028bcd">
+<p>
+Storms, E. en Alvarado, O. (2024), <b>Sensitizing for Algorithms:
+Foregrounding Experience in the Interpretive Study of Algorithmic Regimes</b>,
+in J. Jarke, B. Prietl, S. Egbert, Y. Boeva, H. Heuer, &amp; M.
+Arnolds (eds.), Algorithmic Regimes: Methods, Interactions, and
+Politics (pp. 97-102), Amsterdam University Press,
+<a href="https://doi.org/10.2307/jj.11895528.6">doi.org/10.2307/jj.11895528.6</a>
+</p>
+
+</div>
+<div class="bibnote" id="orgaa3527b">
+<p>
+A methodological reflection on how laypersons&rsquo; experiences with technically complex topics such as &ldquo;algorithms&rdquo; can be subtly elicited so as to prepare them for participatory research or co-design.<br>
+Files: 
+<a class="pdflink" href="./publications/storms-2024.pdf">PDF</a>,
+<a class="biblink" href="./publications/storms-2024.bib">.bib</a>
+</p>
+
+</div>
+
+<div class="bibref" id="org8ff75bc">
+<p>
+Storms, E., Alvarado, O. and Monteiro-Krebs, L. (2022), <b>&ldquo;Transparency
+is Meant for Control&rdquo; and Vice Versa: Learning from Co-designing and
+Evaluating Algorithmic News Recommenders</b>, Proceedings of ACM
+Human-Computer Interaction, Vol. 6, CSCW2, Art. 405 (November 2022),
+<a href="https://doi.org/10.1145/3555130">doi.org/10.1145/3555130</a>
+</p>
+
+</div>
+<div class="bibnote" id="org1406128">
+<p>
+A study on how &ldquo;algorithmic imaginaries&rdquo; can be used in the design of
+a user interface for news recommendation systems. During one of the
+workshops in our attempt at co-design, the link between transparency
+and control became apparent.
+<br>
+Files: 
+<a class="pdflink" href="./publications/storms-2022b.pdf">PDF</a>,
+<a class="biblink" href="./publications/storms-2022b.bib">.bib</a>
+</p>
+
+</div>
+
+<div class="bibref" id="org3206b4b">
+<p>
+Bossens, E., Storms, E. en Geerts, D. (2021), Improving the Debate: Interface
+Elements that Enhance Civility and Relevance in Online News Comments,
+Human-Computer Interaction &ndash; INTERACT 2021, pp. 433-450, <a href="https://doi.org/10.1007/978-3-030-85610-6_25">doi.org/10.1007/978-3-030-85610-6_25</a>
+</p>
+
+</div>
+</div>
+</div>
+<div id="outline-container-org4e93421" class="outline-2">
+<h2 id="org4e93421">More</h2>
+<div class="outline-text-2" id="text-org4e93421">
+<div class="bibref" id="org0bddd54">
+<p>
+Bunneghem, M., Storms, E., Van Gestel, J., Verschraegen, G.enVolont, L. (2024)
+(Eds.), <b>Brieven aan een cultuurcriticus: Krijtsporen van Walter Weyns</b>, Pelckmans.
+</p>
+
+</div>
+<div class="bibnote" id="org9c63fa6">
+<p>
+Samen met voormalige collega&rsquo;s van prof. Walter Weyns, stelden we een
+boek samen ter gelegenheid van zijn emeritaat. Geen klassiek <i>liber
+amicorum</i>, maar een verzameling brieven aan Walter, geschreven door
+vrienden, vakgenoten, en anderen die door hem werden geïnspireerd.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

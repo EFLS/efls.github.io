@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-06-24 Wed 14:04 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emacs anniversary</title>
+<meta name="author" content="EFLS" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="../css/style.css" type="text/css"/>
+<link rel="icon" href="../static/favicon.png" type="image/x-icon">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id='head'>
+    <!-- <h1>EFLS</h1> -->
+    <!-- <a>&mdash;</a> -->
+    <h1><a href='../index.html'>Home</a></h1>
+    <ul>
+        <li><a href='../notes-index.html'>  &lt; Notes on Emacs</a></li>
+    </ul>
+</div>
+</div>
+<div id="content" class="content">
+<header>
+<h1 class="title">Emacs anniversary</h1>
+<p class="subtitle" role="doc-subtitle">Or how I accidentally learned Emacs and Vim at the same time</p>
+</header><p>
+Each september is my &ldquo;Emacs anniversary&rdquo;. It feels like I&rsquo;m a sort of
+addict when put this way, but: I&rsquo;ve been using Emacs since
+september 2017.
+</p>
+
+<p>
+Time to reflect on the journey. But before mentioning my first
+encounter with Emacs (which ultimately took over most of my &ldquo;software
+needs&rdquo;), let me take a step back.
+</p>
+
+<p>
+I don&rsquo;t have much of a &ldquo;technical&rdquo; background, but I had an interest in IT.
+Writing my masters&rsquo; thesis in Sociology with Word was something I found very frustrating, so when I started on my PhD I started explroing different types of software for writing.
+It started with Scrivener (writing software for Mac), but I soon realised that I was more interested in plain text writing.
+This lead me to Ulysses, a markdown editor that made it easy to manage multiple markdown files.
+(I kept using Ulysses to manage my plain text fieldwork notes during my PhD.)
+Writing in markdown was nice, so I moved to Atom<sup><a id="fnr.-0-ak" class="footref" href="#fn.-0-ak" role="doc-backlink">1</a></sup> to write text files and export these with <code>pandoc</code> to PDF and html.
+Atom was a nice encounter with &ldquo;customizability&rdquo;, as it was pretty configurable thanks to third-party packages.
+</p>
+
+<p>
+Around september 2017 I encountered Spacemacs.
+Although I can&rsquo;t remember how it crossed my path &ndash; must have read about it &ldquo;somewhere on the internet&rdquo; &ndash; it immediately interested me.
+Spacemacs came with clear installation instructions and included a tutorial that I followed.
+When I first launched the program, I picked the default &ldquo;Vim&rdquo; keybindings the configuration wizard suggested.
+I had never heard of &ldquo;Vim&rdquo; or &ldquo;Emacs&rdquo; style keybindings.
+</p>
+
+<p>
+So yeah, it took me a while to figure out both at the same time: Vim motions and Emacs concepts (and some additional time to figure out what is exactly the distinction between the two).
+</p>
+
+<p>
+The first weeks and months of using Emacs, while I was still only exploring its use, it took some effort to get around, but thanks to the included tutorial and Spacemacs&rsquo; excellent discoverability I persisted.<sup><a id="fnr.-0-sp" class="footref" href="#fn.-0-sp" role="doc-backlink">2</a></sup>
+Even a year or two later, after I moved from Spacemacs to my own Emacs configuration, I used &ldquo;Evil&rdquo; keybindings for a few years (before switching to &ldquo;vanilla&rdquo; keybindings, which I&rsquo;m currently using).
+</p>
+
+<p>
+While I wouldn&rsquo;t recommend anyone to learn Emacs while also learning Vim movements and keybindings at the same time, doing so was very rewarding.
+</p>
+
+<p>
+It even turns out I liked (and maybe stil like) the idea of modal editing, especially for prose.
+Switching to a different mode to move the cursor in only one or two keystrokes, and then delete and replace text&hellip;
+That&rsquo;s a convenient writing environment, because editing text is a major ingredient of writing.
+I often miss the &ldquo;feel&rdquo; of modal editing, but am now very comfortable with Emacs vanilla keybindings.
+And after all, holding <code>C-</code> or <code>M-</code> for a few keystrokes, that&rsquo;s also pretty modal.
+</p>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.-0-ak" class="footnum" href="#fnr.-0-ak" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Atom, a (to me at least) promising editor that by now is
+discontinued! Something that&rsquo;s very difficult to imagine happening to
+Emacs.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.-0-sp" class="footnum" href="#fnr.-0-sp" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+The Spacemacs website reads &ldquo;ergonomics, mnemonics and
+consistency&rdquo; &ndash; an apt description. It should include: a great entry
+point to Emacs (although I understand why it doesn&rsquo;t).
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class='author'>Author: EFLS</p>
+
+    <p class='date'>Modified: 2026-06-15 Mon 11:25</p>
+
+    <p class='creator'><a href="https://www.gnu.org/software/emacs/">Emacs</a> 31.0.90 (<a href="https://orgmode.org">Org</a> mode 9.8.6)</p>
+</div>
+</body>
+</html>

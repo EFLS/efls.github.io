@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- 2026-06-24 Wed 14:04 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Schuld als verraderlijk idioom</title>
+<meta name="author" content="Elias Storms" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel='stylesheet' href='../css/style.css' type='text/css'/><style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id='head'>
+    <!-- <h1>EFLS</h1> -->
+    <!-- <a>&mdash;</a> -->
+    <a href='../index.html'>Home</a>
+    <ul>
+        <li><a href='../notities-index.html'>  &lt; Notities</a></li>
+    </ul>
+</div>
+</div>
+<div id="content" class="content">
+<header>
+<h1 class="title">Schuld als verraderlijk idioom</h1>
+</header>
+<p>
+Wie de wereld rondom bekijkt met het idioom van schuld in het achterhoofd, ontwaart overal vormen van uitgestelde ruil, onvolledige transacties, en voortdurend bewegende balansen.
+Dat is het gevaar van schuld als paradigma: het is een bril die veel vervormt.
+Ze opzetten impliceert een aanschouwing van de wereld in termen van geven en nemen.
+</p>
+
+<p>
+Denken in termen van krediet en schuld gaat gepaard met een kolonisatie van taal door woordenschat afkomstig uit de economische sfeer.
+Het gevaar is dat dergelijke begrippen axioma&apos;s met zich meebrengen die niet langer in vraag worden gesteld (zie bijvoorbeeld <a href="#citeproc_bib_item_3">Laermans, De Cauter, &#38; Vanhaesebrouck, 2016, p. 10</a> over managementjargon).
+</p>
+
+<p>
+We moeten dus omzichtig omspringen met vaak verleidelijke projecties van boekhoudkundige taal - waar schuld &amp; krediet tenslotte onderdeel van is - op andere vormen van menselijke omgang en verhouding.
+</p>
+
+<p>
+Dat is het drijfzand waar bijvoorbeeld ook Richard Dienst (<a href="#citeproc_bib_item_2">2011</a>) in lijkt te verzakken: <i>alles</i> wordt schuld.
+Na een zoektocht naar de kern van het economisch regime van schuld, graaft hij naar de bredere betekenissen van het begrip om vervolgens bij de kern van het menselijk bestaan uit te komen.
+Een toestand van <i>indebtedness</i> is voor Dienst een fundamenteel kenmerk van de menselijke conditie. Reciprociteit is immers de kern van menselijke samenwerking, en impliceert daardoor ook schuld. Een gemeenschap vormen is volgens Dienst onmogelijk zonder interne verwikkeling in schulden:
+</p>
+
+<blockquote>
+<p>
+A collective must always be &ldquo;indebted&rdquo; to itself in order to carry out any kind of production; it must, in other words, find durable ways to anticipate and mobilize its potential in order to realize it (<a href="#citeproc_bib_item_2">Dienst, 2011, p. 30</a>).
+</p>
+</blockquote>
+
+<p>
+Voor Dienst is zelfs <i>fraternité</i> een vorm van schuld (<a href="#citeproc_bib_item_2">Dienst, 2011, p. 56</a>), zij het van een fundamenteel verschillende categorie dan bij pecuniaire schulden. Dergelijke conceptuele verbreding brengt echter ook problemen met zich mee.
+</p>
+
+<p>
+Ten eerste dreigt de verruiming van schuld een <i>mot valise</i> te maken waar werkelijk alles in past, van plichten en verantwoordelijkheden tussen ouders en kinderen, tot financiële transacties tussen gespecialiseerde actoren. De notie van schuld wordt conceptueel onbruikbaar.
+</p>
+
+<p>
+Een tweede gevaar doet zich echter voor op een dieper paradigmatisch niveau. Dergelijke zienswijze verheft schuld en verschuldiging tot fundament van intermenselijke omgang. Het zet, met andere woorden, de deur open voor economische kolonisatie van ons denken over menselijke verhoudingen. Vrijblijvende samenwerking en wederkerigheid worden berekenbare schulden. Socaliteit wordt ruil.
+</p>
+
+<p>
+Dergelijke verbreiding van denken in termen van schuld blijft overigens niet beperkt tot de sociale wereld: ook de menselijke verhouding tot natuur en planeet wordt in licht van geven en nemen geschetst. In een essay getiteld <i>Payback</i>, als onderdeel van een bundel over schuld en terugbetaling, schrijft Margaret Atwood (<a href="#citeproc_bib_item_1">2008</a>) over <i>ecological debt</i> aan de planeet. We zijn de aarde wat verschuldigd.
+</p>
+
+<p>
+Dergelijke insteek levert rijke beeldspraak op. Zo kopte de VRT op 2 augustus 2017: <i>De Aarde is op voor dit jaar: vanaf vandaag leven we op krediet</i>.<sup><a id="fnr.-0-aarde-krediet" class="footref" href="#fn.-0-aarde-krediet" role="doc-backlink">1</a></sup> De beeldspraak werkt net omdat &ldquo;leven op krediet&rdquo; zo tot de verbeelding spreekt. <i>Global Footprint Network</i>, de organisatie achter <i>Earth Overshoot Day</i> spreekt zelf van een &ldquo;uitgeput budget.&rdquo;<sup><a id="fnr.-0-overshoot" class="footref" href="#fn.-0-overshoot" role="doc-backlink">2</a></sup> Op het eerste zicht niet meer dan een sprekende metafoor, is het nuttig hier kort bij stil te staan. De beeldspraak laat immers een belangrijke voorwaarde zien om te kunnen spreken over krediet en schuld: een berekening in boekhoudkundige termen. Slechts dankzij het boekhoudkundige werk, verborgen in de berekening van de ecologische voetafdruk, is het mogelijk om de verhouding tussen mens en aarde weer te geven in termen van schuld.
+</p>
+
+<p>
+De verbreiding is ook op andere domeinen zichtbaar. Zo wordt in hoger onderwijs al langer gesproken over <i>credits</i>, onder andere Europees geïmplementeerd via ECTS-punten. De implementatie van dit concept herleidt educatie tot een contractuele verhouding, waardoor het ook een mentaliteits- en gedragswijziging teweeg brengt (<a href="#citeproc_bib_item_3">Laermans et al., 2016, p. 64</a>).
+Deze ziens- en denkwijze is onderdeel van een breder oprukkend <i>contractualisme</i>, waarbij menselijke verhoudingen worden herzien in het licht van gestipuleerde verplichtingen in domeinen waar dit voordien afwezig was (<a href="#citeproc_bib_item_3">Laermans et al., 2016, pp. 51–54</a>).
+</p>
+<div id="outline-container-org64028c6" class="outline-2">
+<h2 id="org64028c6">Referenties</h2>
+<div class="outline-text-2" id="text-org64028c6">
+<div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Atwood, M. (2008). <i>Payback: Debt and the shadow side of wealth</i>. Toronto: House of Anansi Press.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Dienst, R. (2011). <i>The bonds of debt: Borrowing against the common good</i>. London: Verso.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Laermans, R., De Cauter, L., &#38; Vanhaesebrouck, K. (2016). <i>Klein lexicon van het managementjargon. Een kritiek van de nieuwe newspeak</i>. Berchem: EPO.</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Voetnoten: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.-0-aarde-krediet" class="footnum" href="#fnr.-0-aarde-krediet" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Huyghebaert, Pieterjan. 2 augustus 2017. De Aarde is op voor dit jaar: vanaf vandaag leven we op krediet. <i>deredactie.be</i>. <a href="http://deredactie.be/cm/vrtnieuws/wetenschap/1.3037530">http://deredactie.be/cm/vrtnieuws/wetenschap/1.3037530</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.-0-overshoot" class="footnum" href="#fnr.-0-overshoot" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Online via <a href="http://www.footprintnetwork.org/our-work/earth-overshoot-day/">http://www.footprintnetwork.org/our-work/earth-overshoot-day/</a>, geraadpleegd op 2 augustus 2017.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class='author'>Auteur: Elias Storms</p>
+
+    <p class='date'>Datum: 2017, 2019</p>
+
+    <p class='date'>Pagina bijgewerkt: 2026-06-17 Wed 09:36</p>
+</div>
+</body>
+</html>

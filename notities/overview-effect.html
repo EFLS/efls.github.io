@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- 2026-06-24 Wed 14:04 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Overview Effect</title>
+<meta name="author" content="Elias Storms" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-c:before { content: 'C'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel='stylesheet' href='../css/style.css' type='text/css'/>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id='head'>
+    <!-- <h1>EFLS</h1> -->
+    <!-- <a>&mdash;</a> -->
+    <a href='../index.html'>Home</a>
+    <ul>
+        <li><a href='../notities-index.html'>  &lt; Notities</a></li>
+    </ul>
+</div>
+</div>
+<div id="content" class="content">
+<header>
+<h1 class="title">The Overview Effect</h1>
+<p class="subtitle" role="doc-subtitle">Over leven op een blauwe bol en de nood aan een nieuwe institutie</p>
+</header>
+
+
+<p>
+Inspiratie en aantekeningen bij de documentaire <i>The Overview Effect</i>
+van Planetary Collective, online op
+<a href="http://www.vimeo.com/55073825">vimeo.com</a>, 19 min.
+</p>
+
+<hr>
+
+<p>
+Toen we de eerste astronauten de ruimte in schoten waren alle ogen naar buiten gericht, op de maan als onze meest nabije satelliet en al wat daar achter ligt. Volledig onverwacht was dan ook dat die kosmische reizen onze perceptie van de aarde grondig zouden wijzigen, in een haast spirituele dimensie. Of in de woorden van een astronaut:
+</p>
+
+<blockquote>
+<p>
+The focus had been: we&apos;re going to the stars, we&apos;re going to other planets&hellip; And suddenly we look back at ourselves [at our planet], and it seems to imply a new kind of self-awareness.
+</p>
+</blockquote>
+
+<p>
+Wanneer de eerste kosmonauten na het verlaten van de aardbol hun blik keerden, aanschouwden ze de aardbol vanuit een onwerkelijk perspectiefpunt. Voor het eerst keek iemand van buiten de dampkring naar die kleine blauwe knikker waar we tot voor kort allemaal aan bleven plakken. En dat aanschouwen bleek een fantastische, haast spirituele ervaring, die zelfs de meest nuchtere kosmonaut niet onberoerd liet. In de woorden van Edgar Mitchell, de zesde man op de maan:
+</p>
+
+<blockquote>
+<p>
+We went up as technicians, and we came down as humanitarians.
+</p>
+</blockquote>
+
+<p>
+De pracht van onze aarde in miniatuur blijkt zelfs de meest rationele kijker te overweldigen. Storm en onweer zijn plots gereduceerd tot minuscuul tumult. Eilanden en continenten tot grillig kartelende en scherp afgelijnde repen land, als waren het vlekken inkt op vloeipapier. Dat onmetelijke blauwe hemelgewelf tot een haast onzichtbare folie, de aarde omhelzend met een flinterdun laagje inpakpapier.
+</p>
+
+<p>
+Het is een verschuiving van perspectief, in de meest letterlijke zin. Terwijl in ons dagdagelijkse leven de hemel onmetelijk lijkt, is voor de astronaut de atmosfeer teruggebracht tot niet meer dan een fijne folie om de aardbol. Plots staat de zon niet langer boven de aarde, als immer aanwezige referentiepunt, maar zien we haar als gigantische brandende bal naast onze kleine blauwe knikker. En zelfs menselijke aanwezigheid is zichtbaar, of het nu is via de oplichtende vlekken van steden in de duisternis, of in de kale vlakten achtergelaten door grootschalige houtkap en roofbouw.
+</p>
+
+
+<br>
+
+<p>
+Bruno Latour<sup><a id="fnr.-0-ltr" class="footref" href="#fn.-0-ltr" role="doc-backlink">1</a></sup> schrijft over het gebrek aan geschikte institutie die ons in staat zou stellen om te stellen klimaatwijziging aan te pakken. Niet als instelling, maar als vermogen tot denken en handelen.
+Er bestaat een grote discrepantie tussen de klimaatproblemen waar we mee te maken krijgen die van een onvoorstelbare omvang zijn in de letterlijke betekenis van het woord, en het gebrek aan gevoelens en gedachten &ndash; kortom, van voorstellingsvermogen &ndash; om ons in beweging te zetten om die crisis aan te pakken.
+Parallel stelt Latour een andere <i>disconnect</i> vast: tussen enerzijds het onmetelijke effect van ons collectief menselijke handelen op onze omgeving, en anderzijds ons gebrekkige begripsvermogen om de omvang van die impact te vatten &ndash; om het nieuwe geologische tijdperk dat we hebben ingeluid onder ogen te zien en het <i>antropoceen</i> te herkennen.
+</p>
+
+<p>
+Paradoxaal genoeg, zo laat Latour zien, is ons inzicht in de schaal van de klimaatverandering zelf  <i>geconstrueerd</i>.
+Het zichtbaar maken van die transformaties is op zichzelf resultaat van een onvoorstelbare assemblage van metingen en modellen, van berekeningen en voorspellingen.
+</p>
+
+<p>
+Latour argumenteert dat we niet langer in staat zijn het sublieme van de natuur te ervaren zoals de Romantici dat konden.
+Net door wetenschappelijke ontwikkelingen die ons in staat stelt klimaatverandering aanschouwelijk te maken, is ook &ldquo;de natuur&rdquo; niet langer tijdloos. Omdat we ons niet langer verantwoordelijk voelen, maar tegelijk ook omdat we ons schuldig voelen wanneer we niet verantwoordelijk genoeg zijn.
+</p>
+
+<p>
+Het is alsof onze verbeeldingskracht op grenzen stuit, en daarmee samenhangend ook de capaciteit om over oplossingen na te denken.
+Instituties fungeren, naast sociale bouwstenen, immers ook als onontbeerlijke <i>denkpatronen</i>.<sup><a id="fnr.-0-dgls" class="footref" href="#fn.-0-dgls" role="doc-backlink">2</a></sup> In die hoedanigheid vormen ze de fundamenten van ons vermogen tot verbeelding, van onze capaciteit om na te denken en oplossingen te zoeken.
+Soms worden instituties half-bewust gecreëerd, toegespitst op een specifieke schaal en voor een specifiek probleem. We construeren zaken als &ldquo;huwelijk&rdquo; of &ldquo;rechtsstaat&rdquo; en voor we het goed en wel beseffen spelen ze een onmisbare rol in ons samenleven.
+Maar wanneer het op klimaatverandering aankomt, stoten we echter op een verbazende afwezigheid van dergelijke instituties. Als antwoord op dat gebrek herneemt Latour een idee van Lovelock en stelt hij <i>Gaia</i> voor, als verbindingstuk ter overbrugging van de <i>disconnect</i> tussen ons beperkte voorstellingsvermogen en de immense schaal van de problematiek.
+</p>
+
+
+<br>
+
+<p>
+Het <i>overview effect</i> kunnen we in dat licht bekijken. In de getuigenissen van de astronauten schijnen bekommernissen door over de ecologische uitdaging waar we als aarde voor staan. En het <i>overview effect</i> werkt daarbij als versterker.
+</p>
+
+<p>
+Hoe verspreiden we zo&apos;n <i>cosmic shift</i>? Moeten we alle 7 miljard een rit om de aarde maken? Hopelijk niet, dat lijkt me niet enkel schier onmogelijk, maar met oog op diezelfde klimaatverandering ook bijzonder onwenselijk.
+Maar zoals een geïnterviewde astronaut opmerkt:
+</p>
+
+<blockquote>
+<p>
+[I] think everybody has that collectively emblazoned on their memories, the way the planet looks.
+</p>
+</blockquote>
+
+<p>
+We staan er haast niet bij stil, maar er schuilt een hele iconografie achter onze collectieve voorstelling van de wereldbol. De <i>Blue Marble</i>-afbeelding is nog maar recent onderdeel van onze cultureel gedeelde beeldenbank. Allemaal hebben we wel een voorstelling van onze kleine wereldbol. Van die groen met blauw gevlekte stip. Nu moeten we diezelfde voorstelling van ons kosmische thuis verheffen tot symbool voor onze afhankelijkheid van <i>Gaia</i>.
+</p>
+
+<p>
+De mini-documentaire opent met een treffend citaat van Fred Hoyle uit 1948, dat hier net zo goed dienst kan doen als afsluiting:
+</p>
+
+<blockquote>
+<p>
+Once a photograph of the Earth, taken from outside is available &hellip; a new idea as powerful as any in history will be let loose.
+</p>
+</blockquote>
+
+<p>
+Laten we hopen dat dit het nieuwe <i>Gaia</i> kan worden. Omdat het nodig is.
+</p>
+
+
+<br>
+
+<p>
+Er bestaat een boek met de titel <i>The Overview Effect</i> en zelfs een heus
+<i>Overview Institute</i>.
+Van dezelfde documentaire makers is inmiddels ook een <i>feature film</i> beschikbaar: <i>Planetary</i>. Het interesseert me om zowel documentaire als de organisatie erachter te bestuderen als kind van deze tijd. Als specifieke, contemporaine wijze waarop de mensheid naar zichzelf en de blauwe planeet kijkt.
+Maar meer nog dan onderwerp van studie, hoop ik dat een <i>overview effect</i> onderdeel kan uitgroeien tot onderdeel van ons institutioneel repertoire.
+</p>
+<div id="footnotes">
+<h2 class="footnotes">Voetnoten: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.-0-ltr" class="footnum" href="#fnr.-0-ltr" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Latour, Bruno (2011), <i>Waiting for Gaia. Composing the common world through art and politics,</i> lecture at the French Institute for the lauching of SPEAP in London, November 2011, beschikbaar op <a href="http://www.bruno-latour.fr/sites/default/files/124-GAIA-LONDON-SPEAP_0.pdf">bruno-latour.fr</a>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.-0-dgls" class="footnum" href="#fnr.-0-dgls" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Zoals scherp beschreven door Mary Douglas in <i>How institutions think</i> (1986), berust ons denken goeddeels op instituties. Meer nog: zonder instituties is denken eenvoudigweg onmogelijk.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class='author'>Auteur: Elias Storms</p>
+
+    <p class='date'>Datum: maart 2016</p>
+
+    <p class='date'>Pagina bijgewerkt: 2026-06-17 Wed 09:14</p>
+</div>
+</body>
+</html>

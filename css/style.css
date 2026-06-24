@@ -1,0 +1,232 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|Merriweather");
+
+/* Setting variables */
+:root {
+    /* Fonts */
+    --efls-font-variable: "Merriweather", serif;
+    --efls-font-fixed: "IBM Plex Sans", sans-serif;
+    /* Color variables */
+    --efls-darkest: #292432;    /* Almost black */
+    --efls-dark:    #344d5b;    /* Dark background */
+    --efls-white:   #f7f7f7;    /* Almost white */
+    --efls-bright:  #f3f3f7;    /* Bright midpoint */
+    --efls-accent:  #b95811;    /* Accent colour */
+}
+
+/* Header for preamble */
+
+#preamble {
+    font-family: var(--efls-font-variable);
+    background-color: var(--efls-dark);
+    position: sticky;
+    line-height: 1.8;
+    top: 0px;
+    padding: 5px;
+}
+#head {
+    margin: auto;
+    max-width: 50em;
+}
+#head a {
+    color: var(--efls-white);
+    font-weight: normal;
+    text-decoration: none;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+/* @media screen and (min-width: 530px) { */
+/*   #head { */
+/*     max-width: 800px; */
+/*   } */
+/* } */
+#head >h1 {
+    font-size: 100%;
+    font-weight: normal;
+    display: inline;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+#head >ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#head >ul li {
+    display: inline;
+}
+
+#head .menu-icon {
+  height: .7lh;
+  vertical-align: text-bottom;
+  padding-right: 1px;
+}
+
+/* Body */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--efls-darkest);
+    background-color: var(--efls-bright);
+    font-family: var(--efls-font-variable);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.title, .subtitle {
+    font-family: var(--efls-font-fixed);
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: var(--efls-font-fixed);
+    font-size: 130%;
+    line-height: 1.1;
+    /* Margins & padding */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section {
+    margin-top: 1em;
+}
+section p {
+    margin: 0.15em 0;
+}
+section p + p {
+    text-indent: 1.5em;
+}
+
+ul {
+    list-style-type: '- ';
+}
+
+.csl-entry {
+    margin-left: 0px;
+}
+
+/* LINKS */
+/* Link colors */
+a,
+a:visited {
+    color: var(--efls-accent);
+}
+
+/* Add a small inline .svg after links (except footnotes) */
+#content a:not(.footref,.footnum,.social-link)::after {
+    content: "";
+    background-image: url("../static/link.svg");
+    background-size: contain;
+    width: 1em;
+    height: 1em;
+    margin-right: 2px;
+    margin-left: 2px;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* Replace the inline .svg for following classes: */
+.pdflink::after {
+    background-image: url("../static/pdf.svg") !important;
+}
+.biblink::after {
+    background-image: url("../static/bib.svg") !important;
+}
+/* Disable in bibref class */
+.bibref a::after {
+    background-image: unset !important;
+}
+/* Disable in csl-entry class */
+.csl-entry a::after {
+    background-image: unset !important;
+}
+
+/* Hanging indent for 'bibref' class */
+.bibref p {
+    font-family: var(--efls-font-fixed);
+    line-height: 1.5;
+    text-indent: -20px;
+    margin-left: 20px;
+    margin-top: 1em;
+    margin-bottom: .25em;
+}
+.bibref a {
+    color: unset;
+}
+.bibnote p {
+    font-size: 90%;
+    margin-left: 1.5em;
+    margin-top: .5em;
+    border-left: 2px solid var(--efls-accent);
+    padding-left: .5em;
+}
+
+/* A note */
+.note{
+    padding-left: 10px;
+    margin-left: 5px;
+    border-left: 2px solid var(--efls-dark);
+}
+
+/* Call-out */
+.callout {
+    padding: 0px 20px 0px 20px;
+    margin: 5px;
+    width: 60%;
+    border: 2px solid var(--efls-accent);
+}
+
+/* In-text icon */
+.intext-icon {
+  height: .7lh;
+  vertical-align: text-bottom;
+  padding-right: 1px;
+}
+
+
+/* Social links and icons */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+.social-icon {
+ height: 1em;
+ max-height: .9lh;
+}
+
+
+#content,
+#postamble {
+    margin: auto;
+    margin-bottom: 1.5em;
+    padding: 0 0.5em;
+}
+
+@media screen and (min-width: 530px) {
+    #content,
+    #postamble {
+        max-width: 750px;
+    }
+    .figure-wider {
+        margin: 0 -50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .figure-wider {
+        margin: 0 -250px;
+    }
+}
+
+
+#content img {
+    max-width: 1200px;
+    /* height: auto; */
+}
+
