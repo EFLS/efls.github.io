@@ -84,6 +84,11 @@ body {
     font-size: 1.5rem;
 }
 
+#text-table-of-contents >ul {
+    list-style-type: "- ";
+    padding-left: 20px;
+}
+
 h2 {
     font-family: var(--efls-font-fixed);
     font-size: 130%;
